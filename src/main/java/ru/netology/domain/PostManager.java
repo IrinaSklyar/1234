@@ -1,25 +1,36 @@
 package ru.netology.domain;
 
 public class PostManager {
-    private int id;
-    private String contactInformation;
-    private String imageUrl;
-    private String text;
-    private int data;
-    private boolean like;
-    private int view;
-    private int repost;
-    private boolean postIsPinned;
-    private boolean canResponse;
-    private boolean canDelete;
-    private boolean canEdit;
+    int owner_id;
+    String domain;
+    String query;
+    String item;
+    boolean owners_only;
+    int count;
 
-    public Post[] search (){
 
+    private Post[] post = new Post[0];
+
+    public Post[] search() {
+        // принимает на вход следующие параметры:
+        int owner_id;
+        String[] items;
+        String query;
+        // перебор элементов массива с помощью функции foreach
+        // сравнить со значением "String query";
+        // вывод количества совпадующих элементов (int count);
+    }
+    // возврат массива с совпадающими значениями;
         return null;
-    }
-    public void delete () {
-
-    }
 }
+
+    public void delete {
+        // принимает на вход следующие параметры:
+        int owner_id
+        int post_id
+        boolean owners_only;
+        // перебираент массив (foreach)
+        // удаляет запись (заданный номер), если условие соблюдено "boolean true"
+        }
+
 
